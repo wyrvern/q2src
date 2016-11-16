@@ -224,7 +224,8 @@ void *Sys_GetGameAPI (void *parms)
 #elif defined __alpha__
 	const char *gamename = "gameaxp.so";
 #else
-#error Unknown arch
+	const char *gamename = "gamei386.so";
+//#error Unknown arch
 #endif
 
 	setreuid(getuid(), getuid());
